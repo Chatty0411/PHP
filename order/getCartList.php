@@ -1,24 +1,19 @@
 <?php
-    header('Access-Control-Allow-Origin: *');
-    $mysqli = new mysqli('localhost', 'root', '', 'finalproject', 3306);
-    $mysqli->set_charset('utf8');
+    include('../sql.php');
 
     spl_autoload_register(function($className) {
         require_once $className . '.php';
     });
-    // // session_start();
 
-    $sql = "SELECT * FROM menu WHERE restaurantId = '功夫茶'";
+    $sql = "SELECT * FROM carts ";
 
     $result=$mysqli->query($sql);
     $data = $result->fetch_object();
-    
-    // // var_dump($result);
-    // // var_dump($data);
+
     $dataarray = array();
 
-    while ($menu = $result->fetch_object()){
-        $dataarray[] = $menu;
+    while ($cart = $result->fetch_object()){
+        $dataarray[] = $cart;
     //     echo "{$menu->menuItemId}<br />";
     //     echo "{$menu->restaurantId}<br />";
     //     echo "{$menu->dish}<br />";
@@ -30,6 +25,4 @@
     }
     $finaldata = json_encode($dataarray);
     echo ($finaldata);
-
 ?>
-
