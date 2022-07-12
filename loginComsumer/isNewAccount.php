@@ -1,9 +1,9 @@
 <?php
-    header('Access-Control-Allow-Origin: http://localhost:3000');
+    header('Access-Control-Allow-Origin: *');
     // if (!isset($_GET['account'])) echo -1;
     if (!isset($_POST['account'])) echo -1;
 
-    include("sql.php");
+    include("../sql.php");
     // $account = $_GET['account'];
     $account = $_POST['account'];
     $sql = "SELECT account FROM member WHERE account = '{$account}'";

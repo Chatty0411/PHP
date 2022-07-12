@@ -1,5 +1,5 @@
 <?php
-    include('sql.php');
+    include('../sql.php');
 
     spl_autoload_register(function($className){
         require_once $className . '.php';

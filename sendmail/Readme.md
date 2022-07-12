@@ -11,5 +11,5 @@ http://localhost:8000/sendEmail.php
 http://localhost:8000/sendmail/sendmail.php
 http://localhost:8000/sendmail/sendmail1.php
 
-丟apache不行???
-共用localhost:3000問題???
+sendmail維持
+php -S localhost:8000
