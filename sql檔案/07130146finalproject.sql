@@ -248,13 +248,13 @@ INSERT INTO `usermember` VALUES (4,'test@gmail.com','$2y$10$wgIsh2vVA/ODw71D1VuU
 UNLOCK TABLES;
 
 --
--- Table structure for table `訂單明細`
+-- Table structure for table `orderdetails`
 --
 
-DROP TABLE IF EXISTS `訂單明細`;
+DROP TABLE IF EXISTS `orderdetails`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `訂單明細` (
+CREATE TABLE `orderdetails` (
   `did` int(11) NOT NULL AUTO_INCREMENT,
   `orderId` int(11) NOT NULL,
   `dish` varchar(100) NOT NULL,
@@ -265,22 +265,22 @@ CREATE TABLE `訂單明細` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `訂單明細`
+-- Dumping data for table `orderdetails`
 --
 
-LOCK TABLES `訂單明細` WRITE;
-/*!40000 ALTER TABLE `訂單明細` DISABLE KEYS */;
-/*!40000 ALTER TABLE `訂單明細` ENABLE KEYS */;
+LOCK TABLES `orderdetails` WRITE;
+/*!40000 ALTER TABLE `orderdetails` DISABLE KEYS */;
+/*!40000 ALTER TABLE `orderdetails` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `訂單資料表`
+-- Table structure for table `order`
 --
 
-DROP TABLE IF EXISTS `訂單資料表`;
+DROP TABLE IF EXISTS `order`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `訂單資料表` (
+CREATE TABLE `order` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `restaurantId` int(11) NOT NULL,
   `uid` int(11) NOT NULL,
@@ -291,12 +291,12 @@ CREATE TABLE `訂單資料表` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `訂單資料表`
+-- Dumping data for table `order`
 --
 
-LOCK TABLES `訂單資料表` WRITE;
-/*!40000 ALTER TABLE `訂單資料表` DISABLE KEYS */;
-/*!40000 ALTER TABLE `訂單資料表` ENABLE KEYS */;
+LOCK TABLES `order` WRITE;
+/*!40000 ALTER TABLE `order` DISABLE KEYS */;
+/*!40000 ALTER TABLE `order` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
