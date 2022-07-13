@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 //include "db_func.php"; 
 require_once 'ECPay.Payment.Integration.php';
  
@@ -40,6 +41,7 @@ if ( $_POST['RtnCode'] =='1' && $CheckMacValue == $_POST['CheckMacValue'] ){
     // 
     // 要處理的程式放在這裡，例如將線上服務啟用、更新訂單資料庫付款資訊等
     // 
+    
 }
  
 // 接收到資訊回應ok

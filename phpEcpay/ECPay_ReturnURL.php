@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 //include "db_func.php"; 
 require_once 'ECPay.Payment.Integration.php';
  

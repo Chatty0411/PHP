@@ -72,13 +72,13 @@ INSERT INTO `menu` VALUES (1,'0','蜜香紅茶','飲料','【大杯】總糖量6
 UNLOCK TABLES;
 
 --
--- Table structure for table `order`
+-- Table structure for table `ordert`
 --
 
-DROP TABLE IF EXISTS `order`;
+DROP TABLE IF EXISTS `ordert`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `order` (
+CREATE TABLE `ordert` (
   `orderId` int(11) NOT NULL AUTO_INCREMENT,
   `restaurantId` int(11) NOT NULL,
   `uId` int(11) NOT NULL,
@@ -90,13 +90,13 @@ CREATE TABLE `order` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `order`
+-- Dumping data for table `ordert`
 --
 
-LOCK TABLES `order` WRITE;
-/*!40000 ALTER TABLE `order` DISABLE KEYS */;
-INSERT INTO `order` VALUES (1,2,12,350,20,'未結帳'),(2,2,12,50,20,'未結帳'),(29628,2,12,215,20,'未結帳'),(33936,2,12,50,20,'未結帳'),(300359,2,12,215,20,'未結帳'),(312952,2,12,215,20,'未結帳'),(443442,2,12,215,20,'未結帳'),(499645,2,12,50,20,'未結帳'),(579861,2,12,50,20,'未結帳'),(604273,2,12,215,20,'未結帳'),(716106,2,12,50,20,'未結帳'),(734582,2,12,215,20,'未結帳');
-/*!40000 ALTER TABLE `order` ENABLE KEYS */;
+LOCK TABLES `ordert` WRITE;
+/*!40000 ALTER TABLE `ordert` DISABLE KEYS */;
+INSERT INTO `ordert` VALUES (1,2,12,350,20,'未結帳'),(2,2,12,50,20,'未結帳'),(29628,2,12,215,20,'未結帳'),(33936,2,12,50,20,'未結帳'),(300359,2,12,215,20,'未結帳'),(312952,2,12,215,20,'未結帳'),(443442,2,12,215,20,'未結帳'),(499645,2,12,50,20,'未結帳'),(579861,2,12,50,20,'未結帳'),(604273,2,12,215,20,'未結帳'),(716106,2,12,50,20,'未結帳'),(734582,2,12,215,20,'未結帳');
+/*!40000 ALTER TABLE `ordert` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
