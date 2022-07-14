@@ -8,7 +8,7 @@
     });
     // // session_start();
 
-    $sql = "SELECT * FROM menu WHERE restaurantId = '功夫茶'";
+    $sql = "SELECT * FROM menu WHERE restaurantId = 1";
 
     $result=$mysqli->query($sql);
     $data = $result->fetch_object();
