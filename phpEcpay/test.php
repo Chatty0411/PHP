@@ -18,6 +18,7 @@ $obj->Send['PaymentType'] = $_POST['PaymentType'];
 $obj->Send['TotalAmount'] = (int)$_POST['TotalAmount'];
 $obj->Send['TradeDesc'] = $_POST['TradeDesc'];
 $obj->Send['ReturnURL'] = "https://ble.com.tw/test/ECPay_ReturnURL.php";
+$obj->Send['ClientBackURL'] ="http://localhost/PHP/phpEcpay//ECPay_ReturnURL.php";
 $obj->Send['ChoosePayment'] = $_POST['ChoosePayment'];
 // $obj->Send['CreditInstallment'] = $_POST['CreditInstallment'];
 // $obj->Send['ChooseSubPayment'] = $_POST['ChooseSubPayment'];
@@ -33,10 +34,12 @@ array_push($obj->Send['Items'], array(
 );
  
 //產生訂單(auto submit至ECPay)
-//$obj->CheckOut();
-$Response = (string)$obj->CheckOutString();
+// $obj->CheckOut();
+$Response = $obj->CheckOut();
+// $Response = (string)$obj->CheckOutString();
+// $Response = $obj->CheckOutFeedback();
 echo $Response;
  
 // 自動將表單送出
-echo '<script>document.getElementById("__ecpayForm").submit();</script>';
+// echo '<script>document.getElementById("__ecpayForm").submit();</script>';
 ?>

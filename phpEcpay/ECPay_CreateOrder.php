@@ -27,6 +27,7 @@ $obj->ServiceURL = "https://payment-stage.ecpay.com.tw/Cashier/AioCheckOut/V5";
 $obj->Send['ReturnURL'] = "https://ble.com.tw/test/ECPay_ReturnURL.php";
 // $obj->Send['OrderResultURL'] = "https://ble.com.tw/test/ECPay_OrderResultURL.php";
  
+//傳到後端處理修改SQL資料再HEADER到前端
 $obj->Send['ClientBackURL'] = "http://localhost:3000/"; //ECPay顯示交易結果頁.裡面帶出返回商店按鈕
  
  
@@ -48,4 +49,4 @@ $Response = (string)$obj->CheckOutString();
 echo $Response;
  
 // 自動將表單送出
-echo '<script>document.getElementById("__ecpayForm").submit();</script>';
+// echo '<script>document.getElementById("__ecpayForm").submit();</script>';

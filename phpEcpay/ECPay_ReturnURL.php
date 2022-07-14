@@ -36,6 +36,8 @@ foreach ($arParameters as $keys => $value) {
 // 計算出 CheckMacValue
 $CheckMacValue = ECPay_CheckMacValue::generate( $arParameters, ECPay_HashKey, ECPay_HashIV );
  
+
+var_dump($_POST);
 // 必須要支付成功並且驗證碼正確
 if ( $_POST['RtnCode'] =='1' && $CheckMacValue == $_POST['CheckMacValue'] ){
     // 
