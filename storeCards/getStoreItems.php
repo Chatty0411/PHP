@@ -8,6 +8,10 @@
     });
     // // session_start();
 
+
+    // 接收參數
+    // $id = $_POST['restaurantId'];
+    // $sql = "SELECT * FROM menu WHERE restaurantId = '{$id}'";
     $sql = "SELECT * FROM menu WHERE restaurantId = 1";
 
     $result=$mysqli->query($sql);
