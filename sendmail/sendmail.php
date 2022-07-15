@@ -20,6 +20,7 @@ $message = "驗證碼是\r\n". $chkNumber;
 $message = wordwrap($message, 70, "\r\n");
 
 // Send
+// mail($sendmail, 'My Subject', $message);
 mail('drama3fu@gmail.com', 'My Subject', $message);
 
 echo $chkNumber;
