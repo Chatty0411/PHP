@@ -15,7 +15,7 @@
     $sql = "SELECT * FROM menu WHERE restaurantId = 1";
 
     $result=$mysqli->query($sql);
-    $data = $result->fetch_object();
+    // $data = $result->fetch_object();
     
     // // var_dump($result);
     // // var_dump($data);
