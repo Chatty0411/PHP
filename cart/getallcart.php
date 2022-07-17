@@ -24,9 +24,13 @@
 
     while ($carts = $result->fetch_object()){
         $dataArray[] = $carts;
-        echo json_encode($carts);
+        
+
+        // echo json_encode($carts);
         // var_dump($carts);
     }
+    $fData = json_encode($dataArray);
+    echo $fData;
 
 
 
