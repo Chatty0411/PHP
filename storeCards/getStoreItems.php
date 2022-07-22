@@ -12,7 +12,7 @@
     // 接收參數
     // $id = $_POST['restaurantId'];
     // $sql = "SELECT * FROM menu WHERE restaurantId = '{$id}'";
-    $sql = "SELECT * FROM menu WHERE restaurantId = 1";
+    $sql = "SELECT * FROM menu WHERE restaurantId = 2";
 
     $result=$mysqli->query($sql);
     // $data = $result->fetch_object();
